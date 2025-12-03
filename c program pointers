@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>  // for malloc
+
+int main() {
+    int k = 5;
+    int *esther = malloc(sizeof(int));  // allocate memory for one int
+
+    if (esther == NULL) {
+        printf("Memory allocation failed!\n");
+        return 1;
+    }
+
+    *esther = k;  // assign value
+    printf("my pointer address is %p and value is %d\n", (void*)esther, *esther);
+
+    free(esther); // free allocated memory
+    return 0;
+}
