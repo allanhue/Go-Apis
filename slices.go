@@ -36,3 +36,32 @@ Operator	Name	Description	Example	T
  ^	XOR	Sets each bit to 1 if only one of two bits is 1	x ^ b	
 <<	Zero fill left shift	Shift left by pushing zeros in from the right	x << 2	
 >>	Signed right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+
+//swch case conditional statements
+package main
+import ("fmt")
+
+func main() {
+  day := 4
+
+  switch day {
+  case 1:
+    fmt.Println("Monday")
+  case 2:
+    fmt.Println("Tuesday")
+  case 3:
+    fmt.Println("Wednesday")
+  case 4:
+    fmt.Println("Thursday")
+  case 5:
+    fmt.Println("Friday")
+  case 6:
+    fmt.Println("Saturday")
+  case 7:
+    fmt.Println("Sunday")
+  }
+}
+
+
+
